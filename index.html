@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/all.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+  <!------------------SWiper Link------------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <section class="section-one">
+    <div id="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-xxl-5 px-3 ">
+          <a class="navbar-brand" href="#">Uza<span>.</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-none" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0   ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-link" href="#" aria-expanded="false">
+                  Pages
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="sub-menu">
+                  <ul class="p-0 m-0">
+                    <li><a class="sub-menu-link" href="#">-Home</a></li>
+                    <li><a class="sub-menu-link" href="#">-About</a></li>
+                    <li><a class="sub-menu-link" href="">-Services</a>
+                    <li><a class="sub-menu-link" href="#">-Portfolio</a></li>
+                    <li><a class="sub-menu-link" href="#">-single Portfolio</a></li>
+                    <li><a class="sub-menu-link" href="#">-Blog</a></li>
+                    <li><a class="sub-menu-link" href="#">-Blog Details</a></li>
+                    <li><a class="sub-menu-link" href="#">-Contact</a></li>
+                    <li><a class="sub-menu-link " href="#">-Dropdown <i class="fa-solid fa-chevron-right "></i></a>
+                      <ul class="Deep-menu">
+                        <li><a href="">-Dropdown item</a></li>
+                        <li class="Last-Hover-menu"><a href="">-Dropdown item <i
+                              class="fa-solid fa-chevron-right "></i></a>
+                          <ul class="Even-menu">
+                            <li><a href="">-Even Dropdown</a></li>
+                            <li><a href="">-Even Dropdown</a></li>
+                            <li><a href="">-Even Dropdown</a></li>
+                            <li><a href="">-Even Dropdown</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="">-Dropdown item</a></li>
+                        <li><a href="">-Dropdown item</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">About</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-link">Blog <i class="fa-solid fa-chevron-down"></i></a>
+                <div class="sub-menu">
+                  <ul class="p-0 m-0">
+                    <li><a class="sub-menu-link" href="#">-Blog</a></li>
+                    <li><a class="sub-menu-link" href="#">-Blog Details</a></li>
+
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contact</a>
+              </li>
+
+              <button class="Baner-btn">Get A Queto</button>
+              <div class="login-btns d-flex align-items-center">
+                <a href="">Login</a>
+                <span>/ Register</span>
+                <i class="fa-solid fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="">
+                          <div class="input-group mb-3">
+
+                            <input type="text" class="form-control" placeholder="Search and hit enter...">
+                            <input type="submit" value="Search" class="form-btn" required>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!---------------------Responsive Header----------------------->
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+          <ul class="p-0 m-0">
+            <li class="Responsive-Itme">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="Responsive-Itme">
+              <a class="nav-link " aria-current="page" id="First-click" href="#">Pages<i
+                  class="fa-solid fa-chevron-down"></i></a>
+              <ul class="Responsive-sub-menu m-0 p-0 " id="On-click">
+                <li><a class="" href="#">-Home</a></li>
+                <li><a href="#">-About</a></li>
+                <li><a href="">-Services</a>
+                <li><a href="#">-Portfolio</a></li>
+                <li><a href="#">-single Portfolio</a></li>
+                <li><a href="#">-Blog</a></li>
+                <li><a href="#">-Blog Details</a></li>
+                <li><a href="#">-Contact</a></li>
+
+                <li><a href="#" id="hello_menue">-Dropdown<i class="fa-solid fa-chevron-down"></i></a>
+                  <ul id="highsecond-deep-click" class="m-0 p-0">
+                    <li><a href="#">-Dropdown item</a></li>
+                    <li><a href="#" id="thred-click">-Dropdown item <i class="fa-solid fa-chevron-down"></i></a>
+                      <ul id="thred-deep" class="m-0 p-0">
+                        <li><a href="#">Even Dropdown</a></li>
+                        <li><a href="#">Even Dropdown</a></li>
+                        <li><a href="#">Even Dropdown</a></li>
+                        <li><a href="#">Even Dropdown</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="">-Dropdown item</a></li>
+                    <li><a href="">-Dropdown item</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li class="Responsive-Itme">
+              <a class="nav-link " aria-current="page" href="#">Portfolio</a>
+            </li>
+            <li class="Responsive-Itme">
+              <a class="nav-link " aria-current="page" href="#">About</a>
+            </li>
+            <li class="Responsive-Itme">
+              <a class="nav-link " aria-current="page" href="#">Blog</a>
+            </li>
+            <li class="Responsive-Itme">
+              <a class="nav-link " aria-current="page" href="#">Contact</a>
+            </li>
+          </ul>
+
+
+          <button class="responsive-btn my-3 d-block">Get A Queto</button>
+          <a href="" class="text-decoration-none ps-4 text-secondary fs-6 fw-semibold">login</a>
+          <span class="ps-2 fs-6 fw-bolder text-secondary">/Register</span>
+
+          <div class="responsive-Search">
+            <i class="fa-solid fa-magnifying-glass ps-4 pt-4" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="">
+                      <div class="input-group mb-3">
+
+                        <input type="text" class="form-control" placeholder="Search and hit enter...">
+                        <input type="submit" value="Search" class="form-btn" required>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="slider-bg-img">
+      <img src="/images/curve-1.png.webp" class="ms-auto" alt="">
+    </div>
+    <div class="container">
+      <div class="content-main">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="slider-content">
+              <h1>Uza makes Your biz <span>grater</span></h1>
+              <span class="slider-text">We love to create "cool" things on Digital
+                Platforms</span>
+              <button>Start Exploring</button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="slider-content-img">
+              <img src="/images/1.png.webp" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-----------------------Section Two--------------------->
+
+  <section class="Section-Two">
+    <div class="Section-Two-Bg-Img">
+      <img src="/images/curve-2.png.webp" alt="">
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="play-img">
+            <img src="/images/2.jpg.webp" alt="">
+            <div class="bg-play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="play-img-Heading mt-5">
+            <h2>We're a Agency Team & Digital Marketing</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing esed diam nonumy eirmod tempor invidunt ut labore et
+              dolore magna.</p>
+            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus est Lorem
+              ipsum dolor sit amet ipsumlor eut consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+              labore et dolore magna liquyam erat.</p>
+            <button>Start Exploring</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!---------------------Section Three--------------------->
+
+  <section class="Section-Three">
+    <div class="container">
+      <div class="row">
+        <h3 class="text-center">Our Services</h3>
+        <div class="col-md-4">
+          <div class="radiase-content text-center">
+            <i class="fa-brands fa-codepen"></i>
+            <h4 class="my-4">Business Strategy</h4>
+            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="radiase-content text-center">
+            <i class="fa-brands fa-pied-piper"></i>
+            <h4 class="my-4">Business Strategy</h4>
+            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="radiase-content text-center">
+            <i class="fa-solid fa-disease"></i>
+            <h4 class="my-4">Business Strategy</h4>
+            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------------------Section Four------------------->
+
+  <section class="Section-Four">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="portfolio text-center px-sm-5">
+            <h3>Our Portfolio</h3>
+            <span>We stay on top of our industry by being experts in yours.</span>
+
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+
+                  <div class="Swiper-img my-sm-5">
+                    <img src="/images/4.jpg.webp" alt="">
+                    <div class="swiper-img-content text-start">
+                      <h4>Digital Marketing</h4>
+                      <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus
+                        est</p>
+                      <div class="overlay-icon text-end">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-slide">
+
+                  <div class="Swiper-img my-sm-5">
+                    <img src="/images/5.jpg.webp" alt="">
+                    <div class="swiper-img-content text-start">
+                      <h4>Digital Marketing</h4>
+                      <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus
+                        est</p>
+                      <div class="overlay-icon text-end">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-slide">
+
+                  <div class="Swiper-img my-sm-5">
+                    <img src="/images/6.jpg.webp" alt="">
+                    <div class="swiper-img-content text-start">
+                      <h4>Digital Marketing</h4>
+                      <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus
+                        est</p>
+                      <div class="overlay-icon text-end">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-slide">
+
+                  <div class="Swiper-img my-sm-5">
+                    <img src="/images/3.jpg.webp" alt="">
+                    <div class="swiper-img-content text-start">
+                      <h4>Digital Marketing</h4>
+                      <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus
+                        est</p>
+                      <div class="overlay-icon text-end">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-slide">
+
+                  <div class="Swiper-img my-sm-5">
+                    <img src="/images/5.jpg.webp" alt="">
+                    <div class="swiper-img-content text-start">
+                      <h4>Digital Marketing</h4>
+                      <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata sanctus
+                        est</p>
+                      <div class="overlay-icon text-end">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------------Section Five------------------------->
+
+  <section class="Section-Five">
+    <div class="section-five-bg">
+      <img src="/images/curve-3.png.webp" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 m-auto">
+          <div class="testimonial-slider">
+            <div class="swiper mySwiper" id="Testimonial">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial-img d-md-flex d-block align-items-center">
+                    <img src="/images/23.jpg.webp" alt="">
+                    <div class="Testimonial-content text-start ms-sm-5">
+                      <h3>“Colorlib Ltd’s ranking has gone up so much from the great work that your team has done and
+                        our brand get organic sales consistently from your efforts. We are happy that the results of
+                        your efforts were lasting and profitable.”</h3>
+                      <div class="ratting mt-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="member-name mt-3 d-flex align-items-center ">
+                        <h5>Darrell Goodman</h5>
+                        <span>- CEO colorlib</span>
+                        <i class="fa-solid fa-quote-left"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-img d-md-flex d-block align-items-center">
+                    <img src="/images/7.jpg.webp" alt="">
+                    <div class="Testimonial-content text-start ms-sm-5">
+                      <h3>“Colorlib Ltd’s ranking has gone up so much from the great work that your team has done and
+                        our brand get organic sales consistently from your efforts. We are happy that the results of
+                        your efforts were lasting and profitable.”</h3>
+                      <div class="ratting mt-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="member-name mt-3 d-flex align-items-center ">
+                        <h5>Darrell Goodman</h5>
+                        <span>- CEO colorlib</span>
+                        <i class="fa-solid fa-quote-left"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-img d-md-flex d-block align-items-center">
+                    <img src="/images/24.jpg.webp" alt="">
+                    <div class="Testimonial-content text-start ms-sm-5">
+                      <h3>“Colorlib Ltd’s ranking has gone up so much from the great work that your team has done and
+                        our brand get organic sales consistently from your efforts. We are happy that the results of
+                        your efforts were lasting and profitable.”</h3>
+                      <div class="ratting mt-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="member-name mt-3 d-flex align-items-center ">
+                        <h5>Darrell Goodman</h5>
+                        <span>- CEO colorlib</span>
+                        <i class="fa-solid fa-quote-left"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-----------------------------Section Six--------------------------->
+
+  <section class="Section-Six">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <div class="user-contact-div">
+            <h4>Interested in working with us?</h4>
+            <h5>Hit the button below or give us a call!</h5>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="user-contact-div">
+            <a href="">Call us now:</a>
+            <span> (+65) 1234 5678</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------Section Seven------------------------------>
+
+  <section class="Section-Seven">
+    <div class="Seven-bg">
+      <img src="/images/curve-4.png.webp" alt="">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card-main-info text-center">
+              <h3>Our Latest Blogs</h3>
+              <span>Hit the button below or give us a call!</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card-main">
+              <!-- <img src="/images/8.jpg.webp" alt=""> -->
+              <div class="card-hover-content">
+                <span>23</span>
+                <span class="date">August, 2018</span>
+                <h4>SEO: The Movie By Ignite Visibility</h4>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing esed diam nonumy eirmod tempor invidunt ut</p>
+                <a href="">Read More <i class="fa-solid fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card-main">
+              <!-- <img src="/images/8.jpg.webp" alt=""> -->
+              <div class="card-hover-content">
+                <span>23</span>
+                <span class="date">August, 2018</span>
+                <h4>What Curling Irons Are The Best Ones</h4>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing esed diam nonumy eirmod tempor invidunt ut</p>
+                <a href="">Read More <i class="fa-solid fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card-main">
+              <!-- <img src="/images/8.jpg.webp" alt=""> -->
+              <div class="card-hover-content">
+                <span>08</span>
+                <span class="date">July, 2018</span>
+                <h4>Amazon REV Workshop: Road to Seattle</h4>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing esed diam nonumy eirmod tempor invidunt ut</p>
+                <a href="">Read More <i class="fa-solid fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-----------------------------Section Eight------------------------>
+
+  <section class="Section-Eight">
+    <div class="container">
+      <div class="section-eight-bg">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="user-content">
+              <h4>Subscribe to our Newsletter</h4>
+              <p>Subscribe our newsletter gor get notification about new updates, etc...</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="user-search">
+
+              <form action="">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Your Email">
+                  <input type="submit" value="Subscribe" class="form-btn" required>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--------------------------Footer Section---------------------------->
+
+  <section class="Footer-Section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-0 mb-sm-5  ">
+          <div class="footer-content">
+            <h5>Contact Us</h5>
+            <span>(+65) 1234 5678</span>
+            <p>40 Baria Sreet 13/2 NY City, US
+              hello.colorlib@gmail.com</p>
+            <p>Mon - Fri: 9:00 - 19:00
+              Closed on Weekends</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-0 mb-sm-5  ">
+          <div class="footer-content-Link">
+            <h5>Quick Link</h5>
+            <ul class="m-0 p-0">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Forum Registeration</a></li>
+              <li><a href="">Forum Sign In</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-0 mb-sm-5  ">
+          <div class="footer-content-Link">
+            <h5>Resources</h5>
+            <ul class="m-0 p-0">
+              <li><a href="">Customer Support</a></li>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Media & Press</a></li>
+              <li><a href="">Our Team</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-0 mb-sm-5  ">
+          <div class="footer-content-icon">
+            <h5>About Us</h5>
+            <P>Integer vehicula mauris libero, at molestie eros imperdiet sit amet.</P>
+            <SPan>© Copyright 2018</SPan>
+            <a href="">Colorlib.</a>
+            <div class="foter-icons mt-5">
+              <i class="fa-brands fa-facebook" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-title="Facebook" id="facebook"></i>
+              <i class="fa-brands fa-twitter" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-title="Twitter" id="twitter"></i>
+              <i class="fa-brands fa-pinterest" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-title="Pinterest" id="pinterest"></i>
+              <i class="fa-brands fa-instagram" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-title="Instagram" id="instagram"></i>
+              <i class="fa-brands fa-youtube" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-title="Youtube" id="youtube"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------------Foooter Last---------------------->
+
+  <section class="Footer-Last my-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center flex-wrap">
+          <span>Copyright ©2024 All rights reserved | This template is made with</span>
+          <i class="fa-regular fa-heart mb-2"></i>
+          <span>By</span>
+          <a href="">Colorlib</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--------------------Bootstrap------------------>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <!-------------------------jquery---------------------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-------------------Swiper Script Link------------->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="/javascript/script.js"></script>
+</body>
+
+</html>
