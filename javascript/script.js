@@ -59,7 +59,7 @@ var swiper = new Swiper("#Testimonial", {
 function changeBg(){
   let header= document.getElementById("header");
   let scroolValue = window.scrollY;
-  if (scroolValue>108) {
+  if (scroolValue>500) {
     header.classList.add('header-main');
   }else{
     header.classList.remove('header-main');
